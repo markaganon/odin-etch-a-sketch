@@ -1,0 +1,29 @@
+* {
+    border:solid red 1px;
+}
+
+html, body {
+    display:flex;
+    flex-direction: column;
+    margin:0px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    width:100%;
+}
+
+#grid {
+    display:grid;
+    height:900px;
+    width:900px;
+}
+
+button {
+    padding:50px;
+}
+
+.square {
+    border:solid black 1px;
+}
+
