@@ -52,7 +52,6 @@ function createGrid(currentSize) {
       });
 
 
-
 function changeColor(event) {
     if (!(mouseDown))  {
         return;
@@ -91,3 +90,14 @@ document.getElementById('eraser').addEventListener("click", function(event) {
 
 // color button
 
+function setCurrentColor(color) {
+    currentColor = color;
+}
+
+let colorpicker = document.getElementById('colorpicker');
+
+colorpicker.addEventListener("change", function(e) {
+    console.log("setting color");
+    console.log(colorpicker.value)
+    setCurrentColor(colorpicker.value);
+});
