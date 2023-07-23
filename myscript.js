@@ -108,3 +108,17 @@ colorpicker.addEventListener("change", function(e) {
     console.log(colorpicker.value)
     setCurrentColor(colorpicker.value);
 });
+
+// grid style
+
+let gridButton = document.getElementById('grid-style');
+
+gridButton.addEventListener("click", function(e) {
+    
+    const squares = document.querySelectorAll(".square");
+
+    squares.forEach((square) => {
+        square.classList.toggle("lines");
+      });
+
+});
