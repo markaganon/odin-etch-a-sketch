@@ -17,6 +17,9 @@ html, body {
     display:grid;
     height:900px;
     width:900px;
+    -webkit-user-drag: none;
+    user-drag: none;
+    user-select: none;
 }
 
 button {

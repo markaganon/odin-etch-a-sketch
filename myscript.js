@@ -90,3 +90,4 @@ document.getElementById('eraser').addEventListener("click", function(event) {
 });
 
 // color button
+
