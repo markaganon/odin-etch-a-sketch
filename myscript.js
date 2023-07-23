@@ -76,8 +76,11 @@ function changeColor(event) {
 
 // clear button
 document.getElementById('clear').addEventListener("click", function(event) {
-    document.getElementById('grid').innerHTML = ''
-    createGrid(currentSize);
+    const squares = document.querySelectorAll(".square");
+
+    squares.forEach((square) => {
+        square.style.backgroundColor = "white";
+      });
 });
 
 // eraser button
