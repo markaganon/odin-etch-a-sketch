@@ -53,13 +53,20 @@ function createGrid(currentSize) {
 
 
 function changeColor(event) {
-    if (!(mouseDown))  {
-        return;
-    }
     const square = event.target;
-    if ((event.type === 'mouseover' && (mouseDown)) || event.type === 'click') {
+
+    // handling clicks
+    if (event.type === 'click') {
         if (currentTool == "eraser") {
-            console.log("erasing");
+            square.style.backgroundColor = "white";
+        } else {
+            square.style.backgroundColor =  currentColor;
+        }
+    }
+
+    // handling drags
+    if ((event.type === 'mouseover') && (mouseDown)) {
+        if (currentTool == "eraser") {
             square.style.backgroundColor = "white";
         } else {
             square.style.backgroundColor =  currentColor;
