@@ -11,26 +11,27 @@
     <h1>Etch-A-Sketch</h1>
     
 <div class="main">
-    <div class="options">
-        <label for="colorpicker">Color Picker:</label>
-        <input type="color" id="colorpicker" value="#000000">
+        <div class="options">
 
-        <button id="eraser">Toggle Eraser</button>
+            <div class="color-package">
+                <label for="colorpicker">Color Picker:</label>
+                <input type="color" id="colorpicker" value="#000000">
+            </div>
 
-        <div class ="slidecontainer">
-            <input type="range" min="1" max="64" value="16" id="gridSlider">
-        </div>
+            <button id="eraser">Toggle Eraser</button>
+
+            <div class ="slidecontainer">
+                <input type="range" min="1" max="64" value="16" id="gridSlider">
+            </div>
         
-        <button id="clear">Clear</button>
+            <button id="clear">Clear</button>
 
-        <button id="grid-style">Toggle Grid Style</button>
+            <button id="grid-style">Toggle Grid Style</button>
 
-    </div>
+            </div>
     
-    <div id="grid">
-        
-    </div>
-</div>
+            <div id="grid"></div>
+        </div>
 
 
 
