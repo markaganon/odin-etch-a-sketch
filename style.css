@@ -22,6 +22,7 @@ html, body {
     user-select: none;
     background-color: white;
     border:solid black 1px;
+    margin-bottom: 50px;
 }
 
 button {
