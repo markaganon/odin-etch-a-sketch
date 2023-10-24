@@ -26,8 +26,10 @@ html, body {
 }
 
 button {
-    padding:50px;
-}
+    padding: 10px 20px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+  }
 
 .square {
     
